@@ -1,3 +1,7 @@
+
+### Updated `index.html` with Media Queries
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +73,27 @@
             color: #FF1493;
             text-shadow: 0 0 10px #FF1493;
         }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            .section {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 0.9em;
+                margin: 0 5px;
+            }
+            .x-link a {
+                font-size: 0.7em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,3 +119,4 @@
     </div>
 </body>
 </html>
+```
