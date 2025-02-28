@@ -36,18 +36,18 @@
             text-shadow: 0 0 10px #FF1493;
         }
         .section {
-            min-height: 100vh; /* Use min-height instead of height */
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             z-index: 2;
-            padding: 10px; /* Adjust padding */
+            padding: 10px;
         }
         .section img, .section video {
-            max-width: 100vw;
-            max-height: 100vh;
-            object-fit: cover;
+            max-width: 100%;
+            max-height: 90vh; /* Limit the height to prevent stretching */
+            object-fit: contain; /* Ensure content fits within the section */
         }
         .x-link {
             position: fixed;
@@ -78,7 +78,7 @@
                 margin: 0 10px;
             }
             .section {
-                padding: 5px; /* Further reduce padding for smaller screens */
+                padding: 5px;
             }
         }
 
